@@ -1,0 +1,414 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%======================================================%%
+%% to compile with pdflatex/xelatex use pdflatex option %%
+%%======================================================%%
+
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+\documentclass[lineno,sn-mathphys]{sn-jnl}% Math and Physical Sciences Reference Style
+%%\documentclass[sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[sn-vancouver]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[sn-apa]{sn-jnl}% APA Reference Style
+%%\documentclass[sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+%%\documentclass[sn-standardnature]{sn-jnl}% Standard Nature Portfolio Reference Style
+%%\documentclass[default]{sn-jnl}% Default
+%%\documentclass[default,iicol]{sn-jnl}% Default with double column layout
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+%%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+\jyear{2024}%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage[justification=centering]{caption}
+\usepackage{makecell}
+
+\begin{document}
+
+\title[Hotspy]{Hotspy: Static Identification Tool for Hotspot Functions Based on Graph Neural Networks}
+
+%%=============================================================%%
+%% Prefix	-> \pfx{Dr}
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% NatureName	-> \tanm{Poet Laureate} -> Title after name
+%% Degrees	-> \dgr{MSc, PhD}
+%% \author*[1,2]{\pfx{Dr} \fnm{Joergen W.} \spfx{van der} \sur{Ploeg} \sfx{IV} \tanm{Poet Laureate} 
+%%                 \dgr{MSc, PhD}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author[1]{\fnm{HIPO} \sur{JSI}}\email{hipo@buaa.edu.cn}
+
+%\author[1]{\fnm{Mingzhen} \sur{Li}}\email{lmzhhh@buaa.edu.cn}
+%
+%\author*[1]{\fnm{Hailong} \sur{Yang}}\email{hailong.yang@buaa.edu.cn}
+%
+%\author[2]{\fnm{Jun} \sur{Xu}}\email{xujun711@sina.com}
+%
+%\author[1]{\fnm{Zhongzhi} \sur{Luan}}\email{07680@buaa.edu.cn}
+%
+%\author[1]{\fnm{Depei} \sur{Qian}}\email{depeiq@buaa.edu.cn}
+%
+%\affil*[1]{\orgname{State Key Laboratory of Software Development Environment}, \orgaddress{\city{Beijing}, \postcode{100191}, \country{China}}}
+%
+%\affil[1]{\orgdiv{School of Computer Science and Engineering}, \orgname{Beihang University}, \orgaddress{\city{Beijing}, \postcode{100191}, \country{China}}}
+%
+%\affil[2]{\orgname{Science and Technology on Special System Simulation Laboratory Beijing Simulation Center}, \orgaddress{\city{Beijing}, \postcode{100854}, \country{China}}}
+
+%%==================================%%
+%% sample for unstructured abstract %%
+%%==================================%%
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
+
+\abstract{
+	Program performance trajectory analysis is a crucial functionality required in the domain of HPC for effective performance tuning. However, the process of collecting program performance trajectories often incurs significant overhead due to the need to track numerous performance metrics such as function timestamps and hardware counters. This overhead poses challenges for the application of performance trajectory analysis tools in real-world, large-scale parallel programs. Current tools typically require an initial program execution to identify and filter hot functions for subsequent trajectory collection, aiming to mitigate the performance overhead. However, in the context of large-scale parallel application tuning, this approach still imposes substantial execution overhead, necessitating an additional program run to obtain the list of hot functions.To address these challenges, we present a hot function instrumentation tool based on Graph Neural Networks(GNN). This tool takes static program analysis and automatic generation of a hot function list for instrumentation. It offers low-overhead collection and analysis capabilities across various performance metrics. By eliminating the need for pre-execution of the program to identify hot functions, our approach significantly reduces execution overhead. This tool provides valuable guidance to developers for optimizing the performance of their applications.
+}
+
+\keywords{Program performance analysis, Graph neural networks, Static analysis, Hot functions}
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+In recent years, the rapid development of multi-core computer architectures has significantly enhanced computer program performance by leveraging hardware advancements and maximizing the utilization of hardware capabilities through programming models. Concurrently, to address the urgent demand for program performance in scientific computing, HPC has further aggregated computing power through cluster-based approaches, supporting rapid and precise computations across various scales in multiple research domains. However, with the deceleration of Moore's Law and limitations in manufacturing processes, program performance has gradually become insufficient to meet the growing demands of users. Therefore, tracking detailed performance trajectories during program execution and conducting comprehensive performance analysis have become paramount for program performance optimization. In the context of large-scale parallel programs, due to the significant overhead (ranging from 40 to 150 times) associated with performance trajectory collection, researchers often opt to collect performance data only for the hot functions during program execution and subsequently analyze and optimize them.\par
+Existing tools are capable of detecting hot functions or inefficient functions within programs, generating related performance analysis reports for developers to optimize. These instrumentation and sampling-based tools, due to their more accurate function trace collection, are widely employed in the field of performance analysis. However, in this process, obtaining function profiling reports necessitates pre-execution incurring high timing costs. Additionally, the manual filtering required impedes non-expert users' utilization of performance collection and analysis tools. Consequently, existing performance analysis tools face challenges in their application to parallel program optimization.\par
+Now GNN have been widely applied in various aspects such as node classification, edge classification, and program representation. Related works have been able to extract program representations based on graph inion such as control flow graphs and call graphs, and apply them to tasks such as function similarity detection and identification of inefficient memory operations. However, there is currently no related work that utilizes graph neural networks to describe and define the task of function list filtering in performance trace collection, and predict hot functions in programs. This can subsequently filter out the list of functions to be traced without the need for additional program execution, reducing the execution overhead of program performance trace analysis. This approach enhances the usability and ease of use of performance tuning tools in parallel program application scenarios.\par
+In all, we have designed and implemented a static identification tool for hot functions. This tool can statically predict all hot functions of a program using the program's own control flow graph and call graph information, thereby eliminating the need for an additional program execution, thus significantly reducing time overhead. Our main contributions are as follows:\par
+\begin{itemize}
+    \item We designed a hotspot function classification tool based on GNN. Hotspy takes the control flow graph (CFG) and call graph (CG) of functions as inputs and produces hot function analysis results as outputs.
+    \item We implemented Hotspy which includes utilizing LLVM tools to obtain CFGs and CGs of all functions in the program, employing the model to predict all functions, and generating a list of hotspot functions.
+    \item Compared to existing performance analysis tools based on dynamic analysis, Hotspy achieved a final prediction accuracy of 65\%, with a hot function identification recall rate of 80\%.Additionally, the time overhead decreased by $10^{-2}$ compared to dynamic analysis..
+\end{itemize}
+
+% The rest of this paper is organized as follows. Section~\ref{sec:background} introduces the background of stencil computation and the Sunway many-core architecture. Section~\ref{sec:relatedwork} presents the related work about the optimization of stencil computation. Section~\ref{sec:method} describes the detailed design and implementation of our stencil optimizations on Sunway. Section~\ref{sec:evaluation} provides the evaluation results and performance analysis, and Section~\ref{sec:conclusion} concludes the paper.
+TODO: The organization of this paper
+
+\section{Background}
+\label{sec:background}
+
+HPC systems typically comprise numerous compute nodes and complex architectures, which can lead to various performance issues during application execution. Consequently, developers need to identify specific hotspots within their code for analysis and optimization. However, traditional performance analysis tools require sampling or instrumentation to obtain the runtime of each function and generate a list of hotspots. This necessitates dynamic execution of either the source or instrumented program for analysis, resulting in prolonged selection times and increased computational costs.\par
+Taking Scalasca as an example, which utilizes instrumentation-based profiling techniques, developers obtain initial function profiling reports containing metrics such as runtime , visits , time percentage, and average time per visit. After manually filtering these reports to identify program hotspots, users create filter files and rerun the target program to obtain a performance trace encompassing these hotspots for further analysis. Table 1 illustrates the compile and runtime overheads before and after instrumentation for several classic parallel programs running on 16-28 processes. It is evident that instrumentation increases program runtime. With the evolution of large-scale parallel computing systems, the overheads of such performance analysis tools become increasingly significant, necessitating a model capable of statically analyzing program source code to accurately identify hotspots and assist in reducing the overhead of these tools.
+In comparison to dynamic analysis, static analysis saves considerable time and is not influenced by the scale of parallel programs.
+\begin{table}[h]
+\caption{The runtime before and after instrumentation of some parallel programs}\label{tab1}%
+\begin{tabular}{@{}llll@{}}
+    \toprule
+    Program & Processor  & \makecell[l]{Time(s) \\before instrumentation} & \makecell[l]{Time(s) \\after instrumentation}\\
+    \midrule
+    Amg    & 28  & 55 & 336 \\
+    Lammps    & 28   & 19  & 214 \\
+    Clomp    & 16  & 136  & 227  \\
+    \botrule
+    \end{tabular}
+\end{table}
+Currently, research has employed graph neural networks for static analysis of programs. There are two primary graph structures within programs: the CFGs and the CGs. A CFG represents the data flow relationships among basic blocks within a program segment, where each node in the CFG corresponds to a code block containing rich semantic information. Thus, in the process of information extraction, it is crucial to preserve as much semantic information as possible. Additionally, GNN are utilized to aggregate information between nodes, thereby capturing the entire CFG's features. Concurrently, Convolutional Neural Networks (CNNs) exploit translational invariance to capture information about the node order within the program. Studies have shown that this approach performs well in tasks such as code similarity detection and code classification.\par
+Besides, the CFG of a function only considers the internal characteristics of the function itself. In large-scale parallel programs, the diverse and complex calling relationships among different types of functions also reflect their characteristics to some extent. Therefore, this work aims to utilize the CG to capture partial features of functions. Each node in the CG represents a function, and directed edges between nodes represent the calling relationships between functions. This static information is valuable for analysis.\par
+LLVM is currently an advanced and popular compilation system. Compared to traditional compilers, LLVM consists of three main parts. Firstly, it supports various programming languages as input through frontends, which produce Intermediate Representation (IR) after lexical and syntax analysis. IR serves as input to LLVM's middle-end, which includes an optimizer and analyzer called OPT. OPT performs various analyses, optimizations, and modifications on the IR. Finally, the backend translates the optimized code into machine code for the corresponding platform. Within the OPT module, there are two crucial passes: dot-cfg and dot-cg. These passes extract all functions from IR and obtain CFGs for functions and CGs for programs, which are essential focuses of this work.\par
+The idea of Hotspy is to design and implement a graph neural networks-based static analysis tool for identifying hotspots in functions. It includes an automated dataset construction script capable of extracting CFGs and CGs for all functions within the target program, along with corresponding analyses of hotspot functions. Additionally, the tool implements a graph neural networks-based classification model to predict hotspot functions within the target program, ultimately providing a list of identified hotspots for developers to perform subsequent code analysis and optimization.
+
+\section{Overview}
+\label{sec:overview}
+Hotspy is based on GNN theories and draws insights from recent advancements in combining deep learning with program performance analysis. It integrates both internal context relationships of functions and sequential characteristics among basic blocks. This includes perceiving function features from two perspectives: CFGs and CGs. The CFGs reflects internal code information, static structure, semantic relationships, and data flow within the function itself. On the other hand, the CGs provides a higher-level view to observe relationships between the target function and other functions, extracting cross-process information such as the complexity and invocation frequency of the target function.
+The core components of Hotspy mainly consist of four parts:\par
+
+\begin{itemize}
+    \item Semantic pre-training: After translating functions in the program into IR using LLVM, opt analyzes the IR to generate corresponding CFGs, where each node represents a basic block. We utilize all collected IR statements as the dataset for pre-training, applying the Word2Vec model to obtain block-level vector embeddings for each basic block.
+    \item Function structure feature embedding: After obtaining block embeddings,Gated Graph Neural Network (GGNN)  is used to train the entire CFG. Utilizing a Message Passing Neural Network (MPNN) framework and Gate Propagation (GP) mechanism, the CFG undergoes iterative updates. During each iteration, each node receives messages from its neighboring nodes and updates its state based on its own features, ultimately yielding a graph embedding for the entire CFG.
+    \item Function sequence feature embedding: Utilizing the translational invariance of CNN, feature extraction is performed on the adjacency matrix of the CFG. CNN can recognize common relative positions from these transformations. In this work, a ResNet-18 network based on CNN is employed to enhance the depth of model training.
+    \item Function external feature embedding: Once obtaining the vector embedding of individual functions, it is crucial to consider the holistic relationships among functions to avoid losing cross-process information. Similarly, employing CNN to embed the adjacency matrix of the CGs allows capturing the topological relationships between functions.
+\end{itemize}
+Finally, concatenating the embeddings of each component and feeding them into the classifier yields the ultimate prediction for hotspot functions. Given that a large-scale parallel program comprises numerous functions, this process also generates the list of hotspot functions for the target program.
+
+TODO:Overview figure
+
+\section{Implement}
+\label{sec:implement}
+\subsection{Datasets}
+This section primarily discusses the construction of parallel program datasets, which are essential for training and testing subsequent models. These datasets serve as foundational elements for evaluating the performance and accuracy of the models developed.
+\subsubsection{Parallel program}
+Hotspy aims to predict hotspots within computational functions in MPI parallel programs. To proceed with this, it is crucial to acquire typical MPI parallel programs that encompass a range of computational patterns as summarized by the Berkeley View's 13 Dwarfs (Table 2). These 13 computational patterns are considered comprehensive, covering nearly all existing parallel computing applications. Therefore, our objective is to procure programs that effectively embody these 13 patterns, thereby enhancing Hotspy's generalization capabilities and applicability.\par
+We selects several classic benchmarking programs designed for performance evaluation on high-performance supercomputers. Additionally, it includes practical large-scale parallel applications sourced mainly from comprehensive performance test suites such as NPB, CORAL2, and ECP Proxy Applications, as well as domain-specific performance test suites. Among these, NPB is a prominent set of benchmarks in the HPC domain, primarily used for evaluating parallel computing performance. It consists of eight distinct benchmarks derived from computational fluid dynamics applications, each simulating different behaviors of parallel applications. Moreover, each benchmark includes six scales: A, B, C, D, W, and S, where A is the smallest and D the largest scale. Consequently, this study can dynamically generate performance data for different numbers of processes by specifying scale sizes, facilitating subsequent testing and evaluation of model applicability ranges.
+\begin{table*}[h]    
+    \centering
+    \captionsetup{justification=centering}
+    \caption{Berkeley view's 13 Dwarfs}\label{13dwarfs}%
+    \begin{tabular}{@{}l@{}}
+    \toprule
+     \midrule
+     1. Dense Linear Algebra (e.g.,BLAS or MATLAB)\\
+     2. Sparse Linear Algebra (e.g.,SpMV, OSKI, or SuperLU)\\
+     3. Spectral Methods \\
+     4. N-Body Methods (e.g.,Barnes-Hut, Fast Multipole Method)\\
+     5. Structured Grids (e.g., Cactus)\\
+     6. Unstructured Grids (e.g.,ABAQUS or FIDAP)\\
+     7. MapReduce (e.g., Monte Carlo)\\
+     8. Combinational Logic\\
+     9. Graph Traversal\\
+     10. Dynamic Programming\\
+     11. Back-track and Branch +Bound\\
+     12. Graphical Models\\
+     13. Finite State Machine\\
+    \botrule
+    \end{tabular}
+\end{table*}
+\subsubsection{CFGs and CGs}
+Once MPI programs are collected, LLVM compilation tools are employed to compile the programs. All source codes are translated into LLVM IR. The LLVM 'opt' tool is then utilized to analyze the IR files, extracting CFGs and CGs for all functions within the program. This process generates a series of .dot files, where each file corresponds to the CFGs of an individual function. Each .dot file contains detailed information about the CFGs, including node information representing IR statements within each basic block, and edge information representing the execution flow between basic blocks.\par
+For each source code file, there corresponds a .dot file containing CGs information, reflecting the function call relationships within the program. In these .dot files, node information represents function names, while edge information signifies the presence of a call between two functions. Subsequently, preprocessing is necessary to enrich the node information within the CGs and to retrieve CGs information specific to particular functions.The .dot file itself is a text file format that includes information about each node, corresponding to the IR of respective basic blocks, and a collection of directed edges. Therefore, processing scripts are required to convert these text representations into graph structures, facilitating subsequent analysis and storage.
+\subsubsection{Hotspot Annotation}
+hotspot function generally refers to functions within a program that consume a significant proportion of execution time. Tools like Scalasca are employed to trace program execution and extract performance metrics, including the number of function calls, average runtime per call, total runtime, and runtime proportion. The runtime proportion specifically indicates the relative importance of functions within the program.\par
+In this study, we dynamically set a threshold based on runtime proportion to distinguish hotspot functions from non-hotspot functions. This approach allows for customizable intervals to define hotspot functions based on practical considerations, thereby broadening the applicability of Hotspy. We define functions with a runtime proportion greater than or equal to 0.1\% as hotspot functions.\par
+CFGs and CGs serve as inputs to the predictive model, while the analysis results of hotspot functions constitute its outputs. Therefore, leveraging existing performance analysis tools is essential to obtain the analysis results for all program functions. Scalasca, for instance, employs function instrumentation to monitor program execution. During runtime, Scalasca collects and records relevant performance data, which is then compiled into an analysis report upon program completion. Subsequently, Scalasca processes these reports to generate visual or textual summaries.\par
+Following this, scripts are employed to analyze the results. Based on predefined hotspot thresholds, all computational functions are categorized to generate a list of hotspot functions. This process facilitates the comprehensive annotation of performance metrics for all computational functions within the program.
+\subsubsection{Imbalance processing}
+In realistic programs, the proportion of hotspot functions is often relatively low. According to statistical analysis of the dataset obtained, data labeled with hot-spot functions constitute only 3.7\% of the total dataset. This results in an imbalance in the class distribution of the dataset, which can lead to overfitting during model training and bias in prediction outcomes. However, the primary objective of this study is to identify hot-spot functions, filter them out, and conduct further analysis. Therefore, the model's cost of false negatives (FN) is substantial.\par
+This study aims to address this issue by performing over-sampling and under-sampling on the dataset to balance the distribution of the two classes, thereby enhancing the model's generalization capability.\par
+\begin{itemize}
+    \item over-sampling:The proportion of hotspot functions in the dataset is quite low. However, increasing the number of hot-spot functions by collecting more MPI parallel programs would significantly consume time. Therefore, we need to augment the existing dataset to increase the ratio of hot-spot functions. For the hot-spot functions in the dataset, we shuffle the CFGs and CGs nodes. By randomly shuffling the order of nodes, we can generate hotspot functions with isomorphic CFGs but different adjacency matrices. This approach enhances the data for hotspot function categories.
+    \item under-sampling:According to our dataset statistics, we found that approximately 70\% of functions in the dataset have only 1 node. Moreover, 97\% of these functions are non-hotspot functions. This statistical finding aligns with intuition, as having a small number of CFG nodes indicates simpler computational logic and shorter execution times for these functions.Therefore, we perform random undersampling on this subset of data. We randomly retain 20\% of the data for inclusion in the training process. This significantly reduces the proportion of non-hotspot functions in the dataset and lowers the training overhead of the model.
+\end{itemize}\par
+Following the described procedures, we augmented the data labeled as hotspot functions by a factor of 8 while discarding 80\% of the data labeled as non-hotspot functions. As a result, the ratio of non-hotspot to hotspot functions in the dataset decreased from 26:1 to 1.44:1.\par
+The series of operations outlined above can be encapsulated into a script tool capable of generating datasets tailored for different target programs. This tool simultaneously implements both oversampling and undersampling techniques. In this work, we utilized LLVM's Clang and Flang frontend compilation tools for constructing CFGs and CGs. Consequently, this approach is currently best suited for parallel programs written in C/C++ and Fortran languages.
+\subsubsection{Large-scale processing}
+CG reflects the call relationships between functions and can to some extent capture the characteristics of target functions. However, in many parallel programs, functions are numerous, and the complexity of a large-scale parallel program results in CGs with very large sizes. Some CGs in our dataset have up to 2000 nodes. This makes it impractical to use the entire graph as input during model training when extracting features for a specific target function. Doing so would significantly increase training time and potentially obscure the intrinsic features of individual functions.\par
+Therefore, in this study, we trim large-scale CGs to reduce data size, enhance model training efficiency, and better capture the distinctive features of target functions. We utilize a Breadth-First Search (BFS) algorithm for CG pruning. Since CGs are inherently directed graphs, to ensure uniform distribution of nodes and prevent bias from nodes being located at the edges of the graph, we first convert CGs into undirected graphs. Starting from the target function, we employ BFS traversal to obtain a subset of nodes of a specified size, thereby deriving the corresponding subgraph.
+
+\subsection{Hotspy}
+This section outlines the specific implementation of Hotspy prediction part.
+\subsubsection{Word2vec}
+To obtain embeddings for each basic block, this study treats the IR within each basic block as a sentence. Each sentence is tokenized into a sequence of words separated by spaces. Thus, it is necessary to extract the vocabulary sequences of all IRs from the dataset and incorporate them into the Word2Vec training model. After predefining the embedding vector size (\(vector\_size\)) and number of iterations (\(epochs\)), the \(IR\_WORD\_MODEL\) pre-trained model is obtained.\par
+Subsequently, to obtain the vector embedding \(e_k\) for each basic block \(k\), the average of the embedding vectors \(w\) corresponding to all words in \(k\) is calculated (equation 1). During training, words with frequencies lower than \(min_count\) are ignored, and their embedding vectors are replaced with the average of all vectors contained in \(IR\_WORD\_MODEL\).
+\begin{equation}
+  {e_k} = \frac{{\sum\limits_{i = 1}^n {IR\_WORD\_MODEL({w_{{k_i}}})} }}{n}\label{eq1}
+\end{equation}\par
+After embedding the blocks, the IR information within the CFG nodes can be replaced with corresponding feature vectors. Due to the IR's similarity to assembly code, its semantics are simpler compared to typical natural language contexts, and the vocabulary size is smaller, making the entire pre-training process fast and efficient. Moreover, IR is independent of the programming language of the source program, thereby enhancing the model's applicability across a wide range of scenarios. The entire procedure is encapsulated into a interface called pretrain. Whenever parameters related to this process change, the pretrain interface needs to be invoked again to update the pre-trained model.
+\subsubsection{GGNN}
+For the initialization process of the GGNN model, several hyperparameters need to be predefined: the hidden state dimension \(GGNN\_STATE\_DIM\), the edge vector dimension \(GGNN\_ANNOTATION\_DIM\), the maximum number of edges \(MAX\_EDGE\_NUM\), the maximum number of nodes \(MAX\_NODE\_NUM\), and the number of GGNN iterations \(GGNN\_STEP\_NUM\). These values can be manually adjusted or optimized through network search to ensure subsequent model tuning.
+Additionally, the propagation model, Propagator, is initialized. This module utilizes GRU to compute intermediate representations of each node during each iteration.
+The input to the GGNN model includes two components: the set of node feature vectors, ANNOTATION, and the bidirectional adjacency matrices, ADJ\_MATRIX. Given that the number of nodes in CFGs is \(n\) and the number of edges is \(e\), GGNN treats out-degree and in-degree graphs separately. Consequently, two adjacency matrices are computed, representing out-degree and in-degree graphs, which are concatenated to form ADJ\_MATRIX. Therefore, the size of ADJ\_MATRIX is \(2ne\).\par
+During each iteration, the initial stage of the propagation process is represented as shown in equation 2, where \(A_v\) denotes the two columns corresponding to node \(v\) in ADJ\_MATRIX. The dimension of \({A_v}\) is \(2ne\), indicating the relationships between the node and its neighboring nodes. The calculation result \(a_v^t\) takes into account bidirectional information propagation based on the construction process of ADJ\_MATRIX.
+\begin{equation}
+    {\rm{a}}_{\rm{v}}^{\rm{t}} = A_{\rm{v}}^T{(h_1^{(t - 1)T},h_2^{(t - 1)T},...,h_n^{(t - 1)T})^T} + b\label{eq2}
+\end{equation}\par
+\(h_i^{t - 1}\) represents the hidden vectors \(STATE\_ANNOTATION\) of all neighboring nodes at time step \(t-1\). Here, \(h_i^1\)  serves as the initial hidden vector, representing the vector embedding of nodes in the initial stage.\par
+According to the principles of Gated Recurrent Unit (GRU), the computed results are further fed into the reset gate and update gate. These operations function similarly to two separate RNNs but serve distinct purposes. The reset gate primarily assists the model in determining how much historical information to retain or control the amount of forgotten information. The update gate, on the other hand, decides how much new information should be retained. Ultimately, the model uses the update gate to determine the amount of information to retain from both the candidate hidden state and the hidden state from the previous iteration. Equation 3 and 4 describes the construction of these reset and update gates.
+\begin{align}
+      z_v^t &= \sigma ({W^z}a_v^t + {U^Z}h_v^{t - 1})\\
+      r_v^t &= \sigma ({W^r}a_v^t + {U^r}h_v^{t - 1})
+\end{align}
+The process of constructing the reset gate is very similar to computing the update gate, but they use different weight matrices 
+\(W\) and \(U\). Compared to traditional RNNs, GRU introduces two additional gates, increasing the number of learnable parameters to three times that of an RNN. This enhancement allows GRU to better handle long sequences and various extreme scenarios.\par
+After obtaining the result from the reset gate, equation 5 is used to obtain the candidate hidden state \( \overset{\sim}{h_{v}^{t}} \), which represents the preliminary result of message passing. Since the final step of the reset gate construction process uses a sigmoid function, the size of \({r_v}\) reflects the degree to which historical information is retained. Finally, equation 6 is used to compute the final hidden state \(h_v^t\) . Similarly, the update gate \({z_v}\), after passing through a sigmoid activation function, indicates the degree to which information is retained from the candidate hidden state.
+During each iteration \(t\), the hidden state obtained is used as input for the \(t+1\) iteration, continuing to participate in the training process.
+\begin{align}
+    \mathop {h_v^t}\limits^ \sim   &= \tanh (Wa_v^t + U(r_v^t \odot h_v^{t - 1}))\\
+    h_v^t &= (1 - z_v^t) \odot h_v^{{\rm{t - 1}}} + z_v^t \odot \overset{\sim}{h_{v}^{t-1}}
+\end{align}\par
+Hotspy's output primarily consists of two cases: one where a single vector represents the features of the entire graph (Equation 7), and another where each node outputs a vector (Equation 8) representing both its own features and the aggregated features resulting from interactions with neighboring nodes. Given that the model's input is the CFG of a function, we emphasize the need to consider graph features from a global perspective to derive the function's characteristics. Subsequent work can involve assigning different weights based on the distinct characteristics of individual basic blocks within the CFG.
+\begin{align}
+    {o_v} &= g(h_v^T,h_v^1)\\
+    {h_G} &= \tanh (\sum\limits_{v \in V} {\sigma (i(h_v^T,{x_v})) \odot \tanh (j(h_v^T,{x_v})))}
+\end{align}
+\subsubsection{CNN}
+CNN can be utilized to learn relative positional information between basic blocks in CFGs and CGs.
+During the transformation of CFGs and CGs into adjacency matrices, this work assumes a default numbering of basic blocks, leading to an amplified difference in adjacency matrix similarity between two functions that are otherwise highly similar due to randomization in numbering. CNN exhibit translation invariance, allowing them to extract similar features from adjacency matrices derived under different architectures or sequences. Additionally, CNN benefits from local connectivity and weight sharing, significantly reducing the number of parameters to train, thereby saving computational time and mitigating overfitting to some extent. However, CNN requires substantial data volume for effective backpropagation, necessitating graph pruning as mentioned earlier. Apart from pruning CGs, large-scale CFGs with node counts exceeding a given threshold are disregarded as inputs to the model.\par
+we employ a ResNet-18 model based on CNN to train on the adjacency matrices of CFGs and CGs. The adjacency matrix, sized \(n^2\) , where \(n\) is the number of nodes, serves as the input to the model.\par
+The final layer of the ResNet model utilizes an Adaptive Max Pooling Layer to derive a low-dimensional vector embedding from the input adjacency matrix \(M\). This embedding is subsequently processed through a Linear Layer to obtain a specified-dimensional feature vector \(F\) (Equation 9).
+\begin{equation}
+   F = Linear(AdaptiveMaxPooling(Resnet18(M)))
+\end{equation}\par
+
+
+ \section{Evaluation}
+ This section discusses the evaluation process and results, demonstrating the superiority of Hotspy over the traditional performance analysis tool Scalasca in the selection of hotspot functions.
+ \subsection{Platform} 
+ The platform for Hotspy includes a Tesla V100-PCIE-32GB GPU and an Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz processor, running on Ubuntu 20.04 LTS. The software stack comprises Python 3.8.0, PyTorch 2.1.2 for deep learning computations, and Scalasca 2.6.1 for performance analysis. Additionally, LLVM 11.8 and OpenMPI 5.0.1 were employed for parallel computing tasks.
+ \subsection{Datasets}
+ We selected MPI benchmark tests and several large-scale MPI parallel programs as our program set, as outlined in Table 3. Apart from benchmarking programs, applications like Lammps, LULESH, AMG, and Pennant are real-world tools and applications chosen for their suitability in validating the accuracy of our model. Each program set includes multiple functions, with each function representing a data item in the model training process. Table 3 also displays the number of functions collected for each program, corresponding to the number of CFGs in the dataset. Additionally, all programs considered in this study were compiled with optimization level O3, and the system's maximum thread count, OMP\_NUM\_THREADS, was set to its default value of 28.
+ \begin{table*}[ht]
+     \centering
+     \caption{MPI programs datasets}
+     \label{tab:data}
+     \begin{tabular}{@{}lll@{}}
+     \hline
+     \textbf{Program}      & \textbf{Processes} & \textbf{Functions} \\ 
+     BT                    & 1024                                           & 28                           \\
+     CGs                   & 1024                                           & 7                            \\
+     FT                    & 1024                                           & 12                           \\
+     IS                    & 1024                                           & 3                            \\
+     LU                    & 1024                                           & 11                           \\  
+     MG                    & 1024                                           & 4                            \\  
+     Nekbone               & 32                                             & 40                           \\  
+     QuickSliver           & 32                                             & 2185                         \\  
+     Pennant               & 64                                             & 569                          \\ 
+     Spec619.lbm           & 16                                             & 8                            \\ 
+     Spec648.exchange2     & 16                                             & 14                           \\ 
+     Spec999               & 16                                             & 7                            \\ 
+     Spec508               & 16                                             & 110                          \\  
+     LULESH                & 27                                             & 227                          \\  
+     Clomp                 & 28                                             & 25                           \\ 
+     Lammps                & 28                                             & 2720                         \\  
+     AMG                   & 64                                             & 162                          \\ 
+     XSbench               & 28                                             & 21                           \\  
+     \textbf{Total}        & \textbf{--}                                    & \textbf{6153}                \\  
+     \hline
+     \end{tabular}
+ \end{table*}\par
+ Based on the current experimental environment, a large number (greater than 500) of nodes corresponding to CFGs result in Out Of CUDA Memory errors during the training process. Furthermore, this extreme data subset constitutes only 0.1\% of the dataset and is likely composed of CFGs that are not hot functions. Specifically, these functions are often core functions with complex logic but fewer invocation instances, with more runtime being consumed by their sub-functions. Therefore, CFGs with such characteristics are categorized directly as non-hot functions and excluded from the training set, allowing for undersampling. Following this processing, the distribution of CFG node counts becomes relatively uniform, and the proportion of hot functions increases from 3.7\% to 40.9\%.
+ \subsection{Validation}\label{subsec2}
+ Currently, there are no existing state-of-the-art (SOTA) models with research objectives similar to Hotspy. Therefore, the accuracy will primarily be referenced against performance analysis results obtained from Scalasca. We assume Scalasca provides 100\% accurate analysis results for the programs. Due to constraints such as time and resources, this study does not employ averaging across multiple measurements, which may introduce variability in experimental outcomes.
+ The test set will be fixed to LULESH and AMG, while the remaining data will serve as the training set. The experiment utilizes K-fold cross-validation, where each validation fold corresponds to one classification result according to Table 1. Finally, the hyperparameter list (Table 4) corresponding to the best average accuracy will be selected.
+ \begin{table*}[ht]
+     \centering
+     \caption{Final Hyperparameters in the Hotspy Model}
+     \label{tab:hyperparameters}
+     \begin{tabular}{@{}lll@{}}
+     \hline
+     \textbf{Parameter Name}      & \textbf{Value} & \textbf{Meaning} \\ 
+     WORD2VEC\_DIM                & 20                     & Dimension of word embeddings \\
+     GGNN\_OUTPUT\_DIM            & 32                     & Dimension of GGNN output global feature vector \\
+     GGNN\_STATE\_DIM             & 25                     & Dimension of GGNN hidden state \\
+     GGNN\_STEP\_DIM              & 10                     & Number of GGNN iteration steps \\
+     MAX\_NODE\_NUM               & 500                    & Maximum number of nodes a model can accept in a graph \\
+     MAX\_EDGE\_NUM               & 500                    & Maximum number of edges a model can accept in a graph \\
+     CNN\_OUTPUT\_DIM\_CFGs       & 20                     & Dimension of adjacency matrix feature vector for CFGs \\
+     CNN\_OUTPUT\_DIM\_CGs        & 12                     & Dimension of adjacency matrix feature vector for CGs \\
+     MIP\_HIDDEN\_SIZE            & 32                     & Dimension of classifier hidden layer \\
+     EPOCHS                       & 10                     & Number of training epochs for the model \\
+     BATCHSIZE                    & 1                      & Size of each batch of input samples \\
+     LR                           & 0.004                  & Learning rate \\
+     \hline
+     \end{tabular}
+ \end{table*}
+ Hotspy achieves an average accuracy of approximately 65\%. Specifically, the average recall, which represents the proportion of correctly identified hot functions out of all actual hot functions, is 80\%. This indicates that the model can effectively recognize a significant portion of the hot functions.
+ \subsection{Overhead}
+ In practical performance analysis, Scalasca is initially used to identify functions with excessive execution time, as these functions are the primary contributors to measurement overhead. Excessive measurement overhead can introduce biases into performance data. To avoid drawing erroneous conclusions based on biased performance data, it is common practice to optimize measurement configurations before proceeding with further experiments. Therefore, Scalasca typically performs two analyses: the first to identify functions affecting measurement overhead, and the second with a filtered configuration based on the first analysis. The second analysis excludes functions listed in the filter file to obtain more accurate results. Hotspy aims to replace Scalasca's first analysis phase. Theoretically, this approach significantly reduces time overhead. For measurement overhead, Scalasca serves as the benchmark. A comparison will be made between the time required for Scalasca's two analyses and the time required for one analysis using our filtering model alongside Scalasca's analysis time. This comparison aims to validate our advantages in reducing time overhead.\par
+ The program's execution scale and optimization level remain consistent with Section 5.2. Table 4 presents the total runtime obtained from Scalasca performance analysis for the two test programs, LULESH and AMG, measured in seconds and rounded to the nearest integer.
+
+ \begin{table*}[ht]
+     \centering
+     \caption{Scalasca and Hotspy's overhead}
+     \begin{tabular}{@{}llll@{}}
+     \hline
+     \textbf{Program} & \textbf{Dynamic Setection(s)} & \textbf{Second Execution(s)} & \textbf{Total (s)} \\ 
+     LULESH & 17576 & 11621 & 29197\\
+     AMG & 8048 & 5267 & 13315 \\
+     \hline
+     \textbf{Program} & \textbf{Hotspy Setection} & \textbf{Second Execution(s)} & \textbf{Total(s)} \\ 
+     LULESH & 203 & 12137 & 12340\\
+     AMG & 170 & 4840 & 5010\\
+     \end{tabular}
+\end{table*}
+ According to Table 5, Hotspy reduced the overhead compared to Scalasca analysis in the first phase, which involves hotspot function selection. Specifically, LULESH experienced a 98.85\% reduction in time overhead, while AMG saw a reduction of 97.89\%. Furthermore, because the first phase represents static time for Hotspy, temporal fluctuations are minimal. However, when using performance analysis tools for hotspot function identification, time tends to increase with program scale, typically in a nonlinear fashion.\par
+ Due to Hotspy's high accuracy in predicting hotspot functions, the difference in time after filtering hotspots identified by Scalasca is minimal. Overall, at this scale of operation, using this tool to filter hotspot functions results in a reduction in time expenditure by 1-2 orders of magnitude compared to traditional performance analysis tools. The overall analysis time decreases by 60~70\%, leading to significant savings in computational resources.
+ \subsection{Case studying}
+ TODO: LULESH Case studying
+
+ \section{Conclusion}
+ We have designed and implemented Hotspy, a static analysis tool based on GNN for identifying hotspot functions. It analyzes the semantics and structure of CFGs and CGs of all functions in parallel programs to predict potential hotspot functions. This tool generates a list of hotspot functions for subsequent program analysis by developers. Compared to the method of running instrumentation programs to collect exhaustive performance trace data of functions and then filtering hotspot functions, Hotspy achieves an overall accuracy rate close to 65\% and identifies 80\% of the actual hotspot functions. Moreover, it reduces time overhead by 1-2 orders of magnitude. Importantly, Hotspy's time overhead remains unchanged with increasing program scale. Therefore, it is suitable for performance analysis of large-scale parallel programs, enabling testers to conduct static analysis of hotspot functions effectively.
+ Certainly, due to the variety and complexity of non-computational functions, our current preliminary approach does not include embedding schemes for nodes in the CGs. This aspect presents an opportunity for optimization in future iterations.
+
+ \section{Related Work}
+ \subsection{Program performance analysis}
+ Performance analysis tools help users identify bottlenecks in systems such as processors, memory, and networking, enabling targeted optimizations. They also facilitate rapid root cause identification and provide solutions.\par
+ TAU captures program performance events through flexible instrumentation, crucial for handling complex scenarios. TAU now focuses on heterogeneous and asynchronous computing, and has evolved to include sampling-based profiling for improved performance analysis.
+ VTune is Intel's tool for monitoring software and hardware performance, analyzing HPC applications for issues like cache misses and instruction shortages. It identifies hotspot functions, analyzes algorithm complexity, and captures memory and I/O usage. Despite efficient hardware-based sampling, VTune requires sampling drivers and has more constraints with OpenMP-based parallel programs compared to TAU.
+ HPCToolkit is designed for large-scale parallel program performance analysis. Initially for multi-core system testing, it's now used in major US GPU-accelerated supercomputers. HPCToolkit samples CPU timers and hardware counters for runtime details like resource usage and function times. It monitors GPU acceleration and doesn't require source code changes, minimizing issues and overhead.
+ Scalasca, developed by Jülich Supercomputing Centre and German Research School for Simulation Sciences, is an event-based performance analysis tool for MPI and OpenMP programs. It automatically traces events and ensures deterministic "wait states" under load imbalance. Scalasca 2.x integrates Score-P for instrumentation-based tracing and measurement.
+ \subsection{GNN for program representation extraction}
+ Existing work utilizes pre-trained natural language models like BERT and Word2vec to transform each node in CFGs into feature vectors for subsequent training. Additionally, GNN with MPNN aggregate information between nodes to derive CFG features. CNN provide translation invariance to capture node order information in programs. This approach demonstrates strong performance in tasks such as code similarity detection and code classification.\par 
+ PUFFIN employs GNNs to identify redundant memory operations in programs. It leverages both CFGs to reflect intra-function characteristics and CGs to capture inter-function memory states. CG nodes include dynamic memory information, while CFGs represent static structural information across the program. Integrating these insights enhances prediction accuracy of program memory operations. However, dynamic sampling-based analysis tools are still necessary to monitor hardware performance units during program execution for memory-related details such as storage and load addresses. Despite reduced overhead compared to traditional performance analysis tools, prolonged runtime remains a challenge in large-scale parallel programs. Moreover, PUFFIN primarily focuses on intra-function and inter-function memory operation details, limiting its ability to comprehensively generalize hotspot function identification.
+
+
+ \backmatter
+
+ \bmhead{Acknowledgments} TODO
+   
+ \section*{Declarations}
+   TODO
+% % \noindent
+% % If any of the sections are not relevant to your manuscript, please include the heading and write `Not applicable' for that section. 
+
+% %%===========================================================================================%%
+% %% If you are submitting to one of the Nature Portfolio journals, using the eJP submission   %%
+% %% system, please include the references within the manuscript file itself. You may do this  %%
+% %% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
+% %% file, and delete the associated \verb+\bibliography+ commands.                            %%
+% %%===========================================================================================%%
+
+\bibliography{sn-bibliography}% common bib file
+TODO
+% %% if required, the content of .bbl file can be included here once bbl is generated
+% %%\input sn-article.bbl
+
+% %% Default %%
+% %%\input sn-sample-bib.tex%
+
+\end{document}

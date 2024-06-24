@@ -1,0 +1,575 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+	%%%     author          = "Gerry Murray",
+	%%%     version         = "1.2",
+	%%%     date            = "2 April 2012",
+	%%%     filename        = "acmsmall-sample-bibfile.bib",
+	%%%     address         = "ACM, NY",
+	%%%     email           = "murray at hq.acm.org",
+	%%%     codetable       = "ISO/ASCII",
+	%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+	%%%     supported       = "yes",
+	%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+	%%%                        that 'match' the examples provided in the Specifications Document
+	%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+	%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+	%%%                        so as to obtain the appropriate ACM Reference Format output.
+	%%%                        It also contains many 'Standard Abbreviations'. "
+	%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+%{AMS}
+@String{AMSTrans = "American Mathematical Society Translations" }
+@String{AMSTrans = "Amer. Math. Soc. Transl." }
+@String{BullAMS = "Bulletin of the American Mathematical Society" }
+@String{BullAMS = "Bull. Amer. Math. Soc." }
+@String{ProcAMS = "Proceedings of the American Mathematical Society" }
+@String{ProcAMS = "Proc. Amer. Math. Soc." }
+@String{TransAMS = "Transactions of the American Mathematical Society" }
+@String{TransAMS = "Trans. Amer. Math. Soc." }
+
+%ACM
+@String{CACM = "Communications of the {ACM}" }
+@String{CACM = "Commun. {ACM}" }
+@String{CompServ = "Comput. Surveys" }
+@String{JACM = "J. ACM" }
+@String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+@String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+@String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+@String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+@String{AmerSocio = "American Journal of Sociology" }
+@String{AmerStatAssoc = "Journal of the American Statistical Association" }
+@String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+@String{ApplMathComp = "Applied Mathematics and Computation" }
+@String{ApplMathComp = "Appl. Math. Comput." }
+@String{AmerMathMonthly = "American Mathematical Monthly" }
+@String{AmerMathMonthly = "Amer. Math. Monthly" }
+@String{BIT = "{BIT}" }
+@String{BritStatPsych = "British Journal of Mathematical and Statistical
+	Psychology" }
+@String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+@String{CanMathBull = "Canadian Mathematical Bulletin" }
+@String{CanMathBull = "Canad. Math. Bull." }
+@String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+@String{CompApplMath = "J. Comput. Appl. Math." }
+@String{CompPhys = "Journal of Computational Physics" }
+@String{CompPhys = "J. Comput. Phys." }
+@String{CompStruct = "Computers and Structures" }
+@String{CompStruct = "Comput. \& Structures" }
+@String{CompJour = "The Computer Journal" }
+@String{CompJour = "Comput. J." }
+@String{CompSysSci = "Journal of Computer and System Sciences" }
+@String{CompSysSci = "J. Comput. System Sci." }
+@String{Computing = "Computing" }
+@String{ContempMath = "Contemporary Mathematics" }
+@String{ContempMath = "Contemp. Math." }
+@String{Crelle = "Crelle's Journal" }
+@String{GiornaleMath = "Giornale di Mathematiche" }
+@String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+%IEEE
+@String{Computer = "{IEEE} Computer" }
+@String{IEEETransComp = "{IEEE} Transactions on Computers" }
+@String{IEEETransComp = "{IEEE} Trans. Comput." }
+@String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+@String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+@String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+@String{ProcIEEE = "Proceedings of the {IEEE}" }
+@String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+@String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+	Systems" }
+@String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+@String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+@String{IMANumerAna = "{IMA} J. Numer. Anal." }
+@String{InfProcLet = "Information Processing Letters" }
+@String{InfProcLet = "Inform. Process. Lett." }
+@String{InstMathApp = "Journal of the Institute of Mathematics and
+	its Applications" }
+@String{InstMathApp = "J. Inst. Math. Appl." }
+@String{IntControl = "International Journal of Control" }
+@String{IntControl = "Internat. J. Control" }
+@String{IntNumerEng = "International Journal for Numerical Methods in
+	Engineering" }
+@String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+@String{IntSuper = "International Journal of Supercomputing Applications" }
+@String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+@String{Kibernetika = "Kibernetika" }
+@String{JResNatBurStand = "Journal of Research of the National Bureau
+	of Standards" }
+@String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+@String{LinAlgApp = "Linear Algebra and its Applications" }
+@String{LinAlgApp = "Linear Algebra Appl." }
+@String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+@String{MathAnaAppl = "J. Math. Anal. Appl." }
+@String{MathAnnalen = "Mathematische Annalen" }
+@String{MathAnnalen = "Math. Ann." }
+@String{MathPhys = "Journal of Mathematical Physics" }
+@String{MathPhys = "J. Math. Phys." }
+@String{MathComp = "Mathematics of Computation" }
+@String{MathComp = "Math. Comp." }
+@String{MathScand = "Mathematica Scandinavica" }
+@String{MathScand = "Math. Scand." }
+@String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+@String{TablesAidsComp = "Math. Tables Aids Comput." }
+@String{NumerMath = "Numerische Mathematik" }
+@String{NumerMath = "Numer. Math." }
+@String{PacificMath = "Pacific Journal of Mathematics" }
+@String{PacificMath = "Pacific J. Math." }
+@String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+@String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+@String{ParComputing = "Parallel Computing" }
+@String{ParComputing = "Parallel Comput." }
+@String{PhilMag = "Philosophical Magazine" }
+@String{PhilMag = "Philos. Mag." }
+@String{ProcNAS = "Proceedings of the National Academy of Sciences
+	of the USA" }
+@String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+@String{Psychometrika = "Psychometrika" }
+@String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+@String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+@String{QuartApplMath = "Quarterly of Applied Mathematics" }
+@String{QuartApplMath = "Quart. Appl. Math." }
+@String{RevueInstStat = "Review of the International Statisical Institute" }
+@String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+%SIAM
+@String{JSIAM = "Journal of the Society for Industrial and Applied
+	Mathematics" }
+@String{JSIAM = "J. Soc. Indust. Appl. Math." }
+@String{JSIAMB = "Journal of the Society for Industrial and Applied
+	Mathematics, Series B, Numerical Analysis" }
+@String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+@String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+@String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+@String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+@String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+@String{SIAMComp = "{SIAM} Journal on Computing" }
+@String{SIAMComp = "{SIAM} J. Comput." }
+@String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+@String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+@String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+@String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+@String{SIAMReview = "{SIAM} Review" }
+@String{SIAMReview = "{SIAM} Rev." }
+@String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+	Computing" }
+@String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+@String{SoftPracExp = "Software Practice and Experience" }
+@String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+@String{StatScience = "Statistical Science" }
+@String{StatScience = "Statist. Sci." }
+@String{Techno = "Technometrics" }
+@String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+	Physics" }
+@String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+@String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+@String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+@String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+	Mechanik" }
+@String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+@String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+@String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+@String{Academic = "Academic Press" }
+@String{ACMPress = "{ACM} Press" }
+@String{AdamHilger = "Adam Hilger" }
+@String{AddisonWesley = "Addison-Wesley" }
+@String{AllynBacon = "Allyn and Bacon" }
+@String{AMS = "American Mathematical Society" }
+@String{Birkhauser = "Birkha{\"u}ser" }
+@String{CambridgePress = "Cambridge University Press" }
+@String{Chelsea = "Chelsea" }
+@String{ClaredonPress = "Claredon Press" }
+@String{DoverPub = "Dover Publications" }
+@String{Eyolles = "Eyolles" }
+@String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+@String{Interscience = "Interscience" }
+@String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+@String{JohnWileySons = "John Wiley and Sons" }
+@String{Macmillan = "Macmillan" }
+@String{MathWorks = "The Math Works Inc." }
+@String{McGrawHill = "McGraw-Hill" }
+@String{NatBurStd = "National Bureau of Standards" }
+@String{NorthHolland = "North-Holland" }
+@String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+@String{PergamonPress = "Pergamon Press" }
+@String{PlenumPress = "Plenum Press" }
+@String{PrenticeHall = "Prentice-Hall" }
+@String{SIAMPub = "{SIAM} Publications" }
+@String{Springer = "Springer-Verlag" }
+@String{TexasPress = "University of Texas Press" }
+@String{VanNostrand = "Van Nostrand" }
+@String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+@inproceedings{garvey2015automatic,
+	title={Automatic performance tuning of stencil computations on GPUs},
+	author={Garvey, Joseph D and Abdelrahman, Tarek S},
+	booktitle={2015 44th International Conference on Parallel Processing},
+	pages={300--309},
+	year={2015},
+	organization={IEEE}
+}
+
+@inproceedings{sun2021cstuner,
+	title={csTuner: Scalable Auto-tuning Framework for Complex Stencil Computation on GPUs},
+	author={Sun, Qingxiao and Liu, Yi and Yang, Hailong and Jiang, Zhonghui and Liu, Xiaoyan and Dun, Ming and Luan, Zhongzhi and Qian, Depei},
+	booktitle={2021 IEEE International Conference on Cluster Computing (CLUSTER)},
+	year={2021}
+}
+
+@INPROCEEDINGS{5645463,  author={Nguyen, Anthony and Satish, Nadathur and Chhugani, Jatin and Kim, Changkyu and Dubey, Pradeep},  booktitle={SC '10: Proceedings of the 2010 ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis},   title={3.5-D Blocking Optimization for Stencil Computations on Modern CPUs and GPUs},   year={2010},  volume={},  number={},  pages={1-13},  doi={10.1109/SC.2010.2}}
+
+@INPROCEEDINGS{8514901,  author={Li, Liandeng and Fang, Jiarui and Fu, Haohuan and Jiang, Jinlei and Zhao, Wenlai and He, Conghui and You, Xin and Yang, Guangwen},  booktitle={2018 IEEE International Conference on Cluster Computing (CLUSTER)},   title={swCaffe: A Parallel Framework for Accelerating Deep Learning Applications on Sunway TaihuLight},   year={2018},  volume={},  number={},  pages={413-422},  doi={10.1109/CLUSTER.2018.00087}}
+
+@INPROCEEDINGS{7967144,  author={Ao, Yulong and Yang, Chao and Wang, Xinliang and Xue, Wei and Fu, Haohuan and Liu, Fangfang and Gan, Lin and Xu, Ping and Ma, Wenjing},  booktitle={2017 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},   title={26 PFLOPS Stencil Computations for Atmospheric Modeling on Sunway TaihuLight},   year={2017},  volume={},  number={},  pages={535-544},  doi={10.1109/IPDPS.2017.9}}
+
+@INPROCEEDINGS{8411073,  author={Cai, Ying and Yang, Chao and Ma, Wenjing and Ao, Yulong},  booktitle={2018 18th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)},   title={Extreme-Scale Realistic Stencil Computations on Sunway TaihuLight with Ten Million Cores},   year={2018},  volume={},  number={},  pages={566-571},  doi={10.1109/CCGRID.2018.00086}}
+
+@InProceedings{10.1007/978-3-030-60245-1_27,
+	author="Liu, Yao
+	and Liu, Li
+	and Hu, Mengtao
+	and Wang, Wei
+	and Xue, Wei
+	and Zhu, Qingting",
+	editor="Qiu, Meikang",
+	title="Performance Modeling of Stencil Computation on SW26010 Processors",
+	booktitle="Algorithms and Architectures for Parallel Processing",
+	year="2020",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="386--400",
+	abstract="Stencil computation is a basic part in a large variety of scientific computing programs, especially for those containing partial differential equations. Due to the limited memory bandwidth, it is a challenge to improve the parallel efficiency of stencil computation on modern supercomputers. Performance modeling is the most common method of performance analysis. In this paper, we propose the generic performance model based on Sunway TaihuLight which is powered by SW26010 heterogeneous many-core processors. The generic model indicates the interaction between the programs and the computing platform from the architecture perspective, and points out the performance bottlenecks of the programs from the optimization perspective. Furthermore, we propose the specific performance model of stencil computation on SW26010 processors, and optimize the performance of stencil computation under the guidance of the model. The experimental results show that the performance models proposed in this paper are effective---the average error ratio of the predicted performance is less than 7{\%}. Guided by the specific model, the optimized stencil computation achieves better performance than the unoptimized many-core version by 154.71{\%} on 4096 cores.",
+	isbn="978-3-030-60245-1"
+}
+
+@InProceedings{10.1007/978-981-15-8083-3_13,
+	author="Tang, YunBo
+	and Li, Mingdong
+	and Chen, Zifang
+	and Xue, Chen
+	and Zhao, Changming
+	and Yang, Hao",
+	editor="Sun, Xingming
+	and Wang, Jinwei
+	and Bertino, Elisa",
+	title="Parallel Optimization of Stencil Computation Base on Sunway TaihuLight",
+	booktitle="Artificial Intelligence and Security",
+	year="2020",
+	publisher="Springer Singapore",
+	address="Singapore",
+	pages="141--152",
+	abstract="Stencil computation is a kind of memory intensive computing core widely used in image and video processing, large-scale science and engineering calculation, which has been taken as the object of performance optimization by many scientific researchers, including parallel acceleration, communication optimization, load balance, while the memory access optimization of stencil computation needs further research [1, 2]. Based on the self-developed supercomputer ``Sunlight'', this paper proposes an efficient parallel optimization method for the stencil algorithm. It includes multi-level optimization accelerated by MPI{\thinspace}+{\thinspace}multi-core, efficient DMA transmission, mutual concealment of communication and calculation, data reuse and other parallel optimization strategies. Experiments on Sunway platform show that the strategy proposed in this paper greatly improves the efficiency of the algorithm and the performance of the algorithm.",
+	isbn="978-981-15-8083-3"
+}
+
+@ARTICLE{8943329,  author={Hu, Yongmin and Yang, Hailong and Luan, Zhongzhi and Gan, Lin and Yang, Guangwen and Qian, Depei},  journal={IEEE Transactions on Parallel and Distributed Systems},   title={Massively Scaling Seismic Processing on Sunway TaihuLight Supercomputer},   year={2020},  volume={31},  number={5},  pages={1194-1208},  doi={10.1109/TPDS.2019.2962395}}
+
+@INPROCEEDINGS{8425230,  author={Xu, Shizhen and Xu, Yuanchao and Xue, Wei and Shen, Xipeng and Zheng, Fang and Huang, Xiaomeng and Yang, Guangwen},  booktitle={2018 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},   title={Taming the "Monster": Overcoming Program Optimization Challenges on SW26010 Through Precise Performance Modeling},   year={2018},  volume={},  number={},  pages={763-773},  doi={10.1109/IPDPS.2018.00086}}
+
+@article{powers2017weather,
+	title={The weather research and forecasting model: Overview, system efforts, and future directions},
+	author={Powers, Jordan G and Klemp, Joseph B and Skamarock, William C and Davis, Christopher A and Dudhia, Jimy and Gill, David O and Coen, Janice L and Gochis, David J and Ahmadov, Ravan and Peckham, Steven E and others},
+	journal={Bulletin of the American Meteorological Society},
+	volume={98},
+	number={8},
+	pages={1717--1737},
+	year={2017}
+}
+
+@inproceedings{dongarra2008exploring,
+	title={Exploring new architectures in accelerating CFD for Air Force applications},
+	author={Dongarra, Jack and Peterson, Gregory and Tomov, Stanimir and Allred, Jeff and Natoli, Vincent and Richie, David},
+	booktitle={2008 DoD HPCMP Users Group Conference},
+	pages={472--478},
+	year={2008},
+	organization={IEEE}
+}
+
+@inproceedings{bertolacci2015parameterized,
+	title={Parameterized diamond tiling for stencil computations with chapel parallel iterators},
+	author={Bertolacci, Ian J and Olschanowsky, Catherine and Harshbarger, Ben and Chamberlain, Bradford L and Wonnacott, David G and Strout, Michelle Mills},
+	booktitle={Proceedings of the 29th ACM on International Conference on Supercomputing},
+	pages={197--206},
+	year={2015}
+}
+
+@inproceedings{frigo2005cache,
+	title={Cache oblivious stencil computations},
+	author={Frigo, Matteo and Strumpen, Volker},
+	booktitle={Proceedings of the 19th annual international conference on Supercomputing},
+	pages={361--366},
+	year={2005}
+}
+
+@article{guo2009writing,
+	title={Writing productive stencil codes with overlapped tiling},
+	author={Guo, Jia and Bikshandi, Ganesh and Fraguela, Basilio B and Padua, David},
+	journal={Concurrency and Computation: Practice and Experience},
+	volume={21},
+	number={1},
+	pages={25--39},
+	year={2009},
+	publisher={Wiley Online Library}
+}
+
+@inproceedings{rivera2000tiling,
+	title={Tiling optimizations for 3D scientific computations},
+	author={Rivera, Gabriel and Tseng, Chau-Wen},
+	booktitle={SC'00: Proceedings of the 2000 ACM/IEEE conference on Supercomputing},
+	pages={32--32},
+	year={2000},
+	organization={IEEE}
+}
+
+@inproceedings{fu20179,
+	title={9-Pflops nonlinear earthquake simulation on Sunway TaihuLight: enabling depiction of 18-Hz and 8-meter scenarios},
+	author={Fu, Haohuan and He, Conghui and Chen, Bingwei and Yin, Zekun and Zhang, Zhenguo and Zhang, Wenqiang and Zhang, Tingjian and Xue, Wei and Liu, Weiguo and Yin, Wanwang and others},
+	booktitle={Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+	pages={1--12},
+	year={2017}
+}
+
+@inproceedings{yang201610m,
+	title={10M-core scalable fully-implicit solver for nonhydrostatic atmospheric dynamics},
+	author={Yang, Chao and Xue, Wei and Fu, Haohuan and You, Hongtao and Wang, Xinliang and Ao, Yulong and Liu, Fangfang and Gan, Lin and Xu, Ping and Wang, Lanning and others},
+	booktitle={SC'16: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+	pages={57--68},
+	year={2016},
+	organization={IEEE}
+}
+
+@inproceedings{ao201726,
+	title={26 pflops stencil computations for atmospheric modeling on sunway taihulight},
+	author={Ao, Yulong and Yang, Chao and Wang, Xinliang and Xue, Wei and Fu, Haohuan and Liu, Fangfang and Gan, Lin and Xu, Ping and Ma, Wenjing},
+	booktitle={2017 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+	pages={535--544},
+	year={2017},
+	organization={IEEE}
+}
+
+@inproceedings{xu2018taming,
+	title={Taming the" Monster": Overcoming program optimization challenges on SW26010 through precise performance modeling},
+	author={Xu, Shizhen and Xu, Yuanchao and Xue, Wei and Shen, Xipeng and Zheng, Fang and Huang, Xiaomeng and Yang, Guangwen},
+	booktitle={2018 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+	pages={763--773},
+	year={2018},
+	organization={IEEE}
+}
+
+@inproceedings{li2021automatic,
+	title={Automatic Code Generation and Optimization of Large-scale Stencil Computation on Many-core Processors},
+	author={Li, Mingzhen and Liu, Yi and Yang, Hailong and Hu, Yongmin and Sun, Qingxiao and Chen, Bangduo and You, Xin and Liu, Xiaoyan and Luan, Zhongzhi and Qian, Depei},
+	booktitle={50th International Conference on Parallel Processing},
+	pages={1--12},
+	year={2021}
+}
+
+@inproceedings{micikevicius20093d,
+	title={3D finite difference computation on GPUs using CUDA},
+	author={Micikevicius, Paulius},
+	booktitle={Proceedings of 2nd workshop on general purpose processing on graphics processing units},
+	pages={79--84},
+	year={2009}
+}
+
+@inproceedings{mostafazadeh2018roofline,
+	title={Roofline guided design and analysis of a multi-stencil cfd solver for multicore performance},
+	author={Mostafazadeh, Bahareh and Marti, Ferran and Liu, Feng and Chandramowlishwaran, Aparna},
+	booktitle={2018 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+	pages={753--762},
+	year={2018},
+	organization={IEEE}
+}
+
+@inproceedings{wellein2009efficient,
+	title={Efficient temporal blocking for stencil computations by multicore-aware wavefront parallelization},
+	author={Wellein, Gerhard and Hager, Georg and Zeiser, Thomas and Wittmann, Markus and Fehske, Holger},
+	booktitle={2009 33rd Annual IEEE International Computer Software and Applications Conference},
+	volume={1},
+	pages={579--586},
+	year={2009},
+	organization={IEEE}
+}
+
+@inproceedings{habich2009enabling,
+	title={Enabling temporal blocking for a lattice Boltzmann flow solver through multicore-aware wavefront parallelization},
+	author={Habich, Johannes and Zeiser, T and Hager, G and Wellein, G},
+	booktitle={21st International Conference on Parallel Computational Fluid Dynamics},
+	pages={178--182},
+	year={2009}
+}
+
+@article{rawat2018domain,
+	title={Domain-specific optimization and generation of high-performance GPU code for stencil computations},
+	author={Rawat, Prashant Singh and Vaidya, Miheer and Sukumaran-Rajam, Aravind and Ravishankar, Mahesh and Grover, Vinod and Rountev, Atanas and Pouchet, Louis-No{\"e}l and Sadayappan, P},
+	journal={Proceedings of the IEEE},
+	volume={106},
+	number={11},
+	pages={1902--1920},
+	year={2018},
+	publisher={IEEE}
+}
+
+@inproceedings{matsumura2020an5d,
+	title={AN5D: automated stencil framework for high-degree temporal blocking on GPUs},
+	author={Matsumura, Kazuaki and Zohouri, Hamid Reza and Wahib, Mohamed and Endo, Toshio and Matsuoka, Satoshi},
+	booktitle={Proceedings of the 18th ACM/IEEE International Symposium on Code Generation and Optimization},
+	pages={199--211},
+	year={2020}
+}
+
+@inproceedings{rawat2019optimizing,
+	title={On optimizing complex stencils on GPUs},
+	author={Rawat, Prashant Singh and Vaidya, Miheer and Sukumaran-Rajam, Aravind and Rountev, Atanas and Pouchet, Louis-No{\"e}l and Sadayappan, P},
+	booktitle={2019 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+	pages={641--652},
+	year={2019},
+	organization={IEEE}
+}
+
+@INPROCEEDINGS{7965116,
+	author={Xu, Zhigeng and Lin, James and Matsuoka, Satoshi},
+	booktitle={2017 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, 
+	title={Benchmarking SW26010 Many-Core Processor}, 
+	year={2017},
+	volume={},
+	number={},
+	pages={743-752},
+	doi={10.1109/IPDPSW.2017.9}}
+
+@INPROCEEDINGS{8025316,
+	author={Jiang, Lijuan and Yang, Chao and Ao, Yulong and Yin, Wanwang and Ma, Wenjing and Sun, Qiao and Liu, Fangfang and Lin, Rongfen and Zhang, Peng},
+	booktitle={2017 46th International Conference on Parallel Processing (ICPP)}, 
+	title={Towards Highly Efficient DGEMM on the Emerging SW26010 Many-Core Processor}, 
+	year={2017},
+	volume={},
+	number={},
+	pages={422-431},
+	doi={10.1109/ICPP.2017.51}}
+
+@ARTICLE{8468040,
+	author={Chen, Yuedan and Li, Kenli and Yang, Wangdong and Xiao, Guoqing and Xie, Xianghui and Li, Tao},
+	journal={IEEE Transactions on Parallel and Distributed Systems}, 
+	title={Performance-Aware Model for Sparse Matrix-Matrix Multiplication on the Sunway TaihuLight Supercomputer}, 
+	year={2019},
+	volume={30},
+	number={4},
+	pages={923-938},
+	doi={10.1109/TPDS.2018.2871189}}
+
+@ARTICLE{9078890,
+	author={Chen, Yuedan and Xiao, Guoqing and Özsu, M. Tamer and Liu, Chubo and Zomaya, Albert Y. and Li, Tao},
+	journal={IEEE Transactions on Parallel and Distributed Systems}, 
+	title={aeSpTV: An Adaptive and Efficient Framework for Sparse Tensor-Vector Product Kernel on a High-Performance Computing Platform}, 
+	year={2020},
+	volume={31},
+	number={10},
+	pages={2329-2345},
+	doi={10.1109/TPDS.2020.2990429}}
+
+@inproceedings{10.1145/3205289.3205313,
+	author = {Liu, Changxi and Xie, Biwei and Liu, Xin and Xue, Wei and Yang, Hailong and Liu, Xu},
+	title = {Towards Efficient SpMV on Sunway Manycore Architectures},
+	year = {2018},
+	isbn = {9781450357838},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3205289.3205313},
+	doi = {10.1145/3205289.3205313},
+	abstract = {Sparse Matrix-Vector Multiplication (SpMV) is an essential computation kernel for many data-analytic workloads running in both supercomputers and data centers. The intrinsic irregularity in SpMV is challenging to achieve high performance, especially when porting to new architectures. In this paper, we present our work on designing and implementing efficient SpMV algorithms on Sunway, a novel architecture with many unique features. To fully exploit the Sunway architecture, we have designed a dual-side multi-level partition mechanism on both sparse matrices and hardware resources to improve locality and parallelism. On one hand, we partition sparse matrices into blocks, tiles, and slices for different granularities. On the other hand, we partition cores in a Sunway processor into fleets, and further dedicate part of cores in a fleet as computation and I/O cores. Moreover, we have optimized the communication between partitions to further improve the performance. Our scheme is generally applicable to different SpMV formats and implementations. For evaluation, we have applied our techniques atop a popular SpMV format, CSR. Experimental results on 18 datasets show that our optimization yields up to 15.5x (12.3x on average) speedups.},
+	booktitle = {Proceedings of the 2018 International Conference on Supercomputing},
+	pages = {363–373},
+	numpages = {11},
+	keywords = {Sparse Matrices, Parallelism, Sunway Architecture, SpMV, Locality},
+	location = {Beijing, China},
+	series = {ICS '18}
+}
+
+@article{Yount2016YASKYetAS,
+	title={YASK—Yet Another Stencil Kernel: A Framework for HPC Stencil Code-Generation and Tuning},
+	author={Charles R. Yount and Josh Tobin and Alexander Breuer and Alejandro Duran},
+	journal={2016 Sixth International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing (WOLFHPC)},
+	year={2016},
+	pages={30-39}
+}
+
+@inproceedings{10.1145/3458817.3476149,
+	author = {Yuan, Liang and Cao, Hang and Zhang, Yunquan and Li, Kun and Lu, Pengqi and Yue, Yue},
+	title = {Temporal Vectorization for Stencils},
+	year = {2021},
+	isbn = {9781450384421},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3458817.3476149},
+	doi = {10.1145/3458817.3476149},
+	abstract = {Stencil computations represent a very common class of nested loops in scientific and engineering applications. Exploiting vector units in modern CPUs is crucial to achieving peak performance. Previous vectorization approaches often consider the data space, in particular the innermost unit-strided loop. It leads to the well-known data alignment conflict problem that vector loads are overlapped due to the data sharing between continuous stencil computations. This paper proposes a novel temporal vectorization scheme for stencils. It vectorizes the stencil computation in the iteration space and assembles points with different time coordinates in one vector. The temporal vectorization leads to a small fixed number of vector reorganizations that is irrelevant to the vector length, stencil order, and dimension. Furthermore, it is also applicable to Gauss-Seidel stencils, whose vectorization is not well-studied. The effectiveness of the temporal vectorization is demonstrated by various Jacobi and Gauss-Seidel stencils.},
+	booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+	articleno = {82},
+	numpages = {13},
+	keywords = {stencil computation, data alignment conflicts, vectorization},
+	location = {St. Louis, Missouri},
+	series = {SC '21}
+}
+
+@inproceedings{li2022efficient,
+  title={An Efficient Vectorization Scheme for Stencil Computation},
+  author={Li, Kun and Yuan, Liang and Zhang, Yunquan and Yue, Yue and Cao, Hang},
+  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  pages={650--660},
+  year={2022},
+  organization={IEEE}
+}
+
+@inproceedings{li2021reducing,
+  title={Reducing redundancy in data organization and arithmetic calculation for stencil computations},
+  author={Li, Kun and Yuan, Liang and Zhang, Yunquan and Yue, Yue},
+  booktitle={Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages={1--15},
+  year={2021}
+}
+
+@inproceedings{yuan2017tessellating,
+  title={Tessellating stencils},
+  author={Yuan, Liang and Zhang, Yunquan and Guo, Peng and Huang, Shan},
+  booktitle={Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages={1--13},
+  year={2017}
+}
+
+@inproceedings{ahmad2021fast,
+  title={Fast stencil computations using fast Fourier transforms},
+  author={Ahmad, Zafar and Chowdhury, Rezaul and Das, Rathish and Ganapathi, Pramod and Gregory, Aaron and Zhu, Yimin},
+  booktitle={Proceedings of the 33rd ACM Symposium on Parallelism in Algorithms and Architectures},
+  pages={8--21},
+  year={2021}
+}
+
+%%============================================================================%%
+%% while using chicago reference style, both abbreviated and expanded form of %%
+%% author name format is acceptable. Refer below example for expanded form    %%
+%%============================================================================%%
+
+%%  author		= "{Cameron, Deborah}", - single author
+%%  author		= "{Saito, Yukio} and {Hyuga, Hiroyuki}", - double author 
+
+%%======================================%%
+%% Example for author names with suffix %%
+%%======================================%%
+
+%%  author		= "{Price, R. A. Jr} and {Curry, N. {III}} and McCann, K. E. and 
+%%					Fielding, J. L. and {Abercrombie, E. Jr}",
